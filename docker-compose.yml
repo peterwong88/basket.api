@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  basket.api:
+    image: ${DOCKER_REGISTRY-}basketapi
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  basketdb:
+    image: redis:alpine
