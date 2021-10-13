@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   basket.api:
-    image: ${DOCKER_REGISTRY-}basketapi
+    image: ${DOCKER_REGISTRY-}peterwong88/basketapi
     build:
       context: .
       dockerfile: Dockerfile
